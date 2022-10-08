@@ -32,10 +32,11 @@
 #                drv = defaultPackage;
 #            };
 #                defaultPackage = batteryBuddy;
-                apps.batteryBuddy = flake-utils.lib.mkApp {
-                    drv = batteryBuddy;
-                };
+#                apps.batteryBuddy = flake-utils.lib.mkApp {
+#j                    drv = batteryBuddy;
+#               };
 
+                packages.batteryBuddy = batteryBuddy;
             }
             );
 }
